@@ -770,3 +770,32 @@ textarea {
   width: 448px;
   height: 120px;
 }
+
+.close-modal {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+}
+.form {
+  width: 448px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 1px solid tomato;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid rgb(37, 184, 37);
+  margin-bottom: 28px;
+}
+
+.form-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: #212121;
+}

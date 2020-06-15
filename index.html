@@ -517,20 +517,45 @@
 
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        <button data-close-modal>Закрыть</button>
-        <form class="js-speaker-form">
-          <label for="name">Имя</label>
-          <input type="text" name="name" id="name" />
+        <button class="close-modal" data-close-modal>Закрыть</button>
 
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" />
+        <form class="js-speaker-form form">
+          <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Иван Иванович"
+            />
+          </div>
 
-          <label for="mail">Почта</label>
-          <input type="email" name="mail" id="mail" />
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" placeholder="063 111 11 11" />
+          </div>
 
-          <label for="comment">Оставить комментарий</label>
-          <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+          <div class="form-field">
+            <label for="mail">Почта</label>
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="exemple@advance.com"
+            />
+          </div>
 
+          <div class="form-field">
+            <label for="comment">Оставить комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Уточните детали заказа"
+            ></textarea>
+          </div>
           <div role="group">
             <input type="checkbox" name="policy" value="yes" id="html" />
             <label for="html"
