@@ -521,49 +521,39 @@
 
         <form class="js-speaker-form form">
           <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
-          <div class="form-field">
-            <label for="name">Имя</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Иван Иванович"
-            />
-          </div>
 
-          <div class="form-field">
-            <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" placeholder="063 111 11 11" />
-          </div>
+          <label class="form-field" autocomplete="off">
+            <input type="text" class="form-input" name="name" placeholder=" " />
+            <span class="form-label">Имя</span>
+            <span class="icon-modal"> </span>
+          </label>
 
-          <div class="form-field">
-            <label for="mail">Почта</label>
-            <input
-              type="email"
-              name="mail"
-              id="mail"
-              placeholder="exemple@advance.com"
-            />
-          </div>
+          <label class="form-field">
+            <input type="tel" class="form-input" placeholder=" " />
+            <span class="form-label">Телефон</span>
+            <span class="icon-modal"> </span>
+          </label>
 
-          <div class="form-field">
-            <label for="comment">Комментарий</label>
-            <textarea
-              name="comment"
-              id="comment"
-              cols="30"
-              rows="10"
-              placeholder="Уточните детали заказа"
-            ></textarea>
-          </div>
+          <label class="form-field">
+            <input type="email" class="form-input" placeholder=" " />
+            <span class="form-label">Почта</span>
+            <span class="icon-modal"> </span>
+          </label>
+
+          <label for="comment" class="form-field">
+            <textarea name="comment" placeholder=" "></textarea>
+            <span class="form-label">Комментарий</span>
+          </label>
+
           <div role="group">
             <input type="checkbox" name="policy" value="yes" id="html" />
-            <label for="html"
-              >Соглашаюсь с рассылкой и принимаю Условия договора</label
+            <label for="html" class="user-terms"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="">Условия договора</a></label
             >
           </div>
 
-          <button type="submit">Оставить заявку</button>
+          <button type="submit" class="button-submit">Оставить заявку</button>
         </form>
       </div>
     </div>
