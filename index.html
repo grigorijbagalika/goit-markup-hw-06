@@ -66,7 +66,7 @@
               эффективные решения <br />
               для вашего бизнеса
             </h1>
-            <button class="hero-btn button" data-open-modal>
+            <button class="hero-btn" data-open-modal>
               Заказать услугу
             </button>
             <!-- <a href="index.html" class="button">Заказать услугу</a> -->
@@ -498,15 +498,23 @@
               </li>
             </ul>
           </div>
-          <div class="sub-flex">
+          <div>
             <b class="footer-text">Подпишитесь на рассылку</b>
-            <p class="text-sub">
-              <label>Email</label>
-              <input type="email" name="email" required />
-            </p>
-            <button>
-              Подписаться
-            </button>
+            <div class="sub-flex">
+              <label for="footer" class="footer-label">
+                <input
+                  type="email"
+                  class="footer-input"
+                  name="email"
+                  placeholder="E-mail"
+                  id="footer"
+                  required
+                />
+              </label>
+              <button class="footer-btn">
+                Подписаться
+              </button>
+            </div>
           </div>
         </div>
       </div>

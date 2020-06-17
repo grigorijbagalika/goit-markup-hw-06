@@ -248,19 +248,15 @@ button {
 .hero-btn {
   border: none;
   border-radius: 4px;
-
   padding: 0;
-
-
   width: 200px;
   height: 50px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
-
   background-color: #2196f3;
+  color: #ffffff
 }
 
   
@@ -585,6 +581,61 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.sub-flex {
+  display: flex;
+
+}
+
+.footer-input {
+  /* display: inline-flex; */
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 16px;
+  margin-right: 12px;
+  background-color: #2F303A;
+  color: #ffffff
+
+
+}
+
+.footer-btn {
+  /* display: inline-flex; */
+  padding: 0;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  color: #ffffff;
+
+}
+
+.footer-btn::after {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../image/iconsend.svg);
+
+  transform: translateY(5px) scale(1);
+  
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* background-color: violet; */
+}
+
+.footer-btn:hover::after {
+transform: translateY(-45px) translateX(30px)  scale(0.01);
 }
 
 .copyright {
